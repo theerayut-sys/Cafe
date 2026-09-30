@@ -1,0 +1,6 @@
+{
+  "name": "CHAM Cafe & Shokupan - คาเฟ่ & เบเกอรี่สั่งออนไลน์",
+  "description": "สั่งเครื่องดื่มชา กาแฟ ขนมปังปิ้งโชกุปัง ปรับแต่งความหวาน ชำระเงินออนไลน์ สะสมแต้มสมาชิก ติดตามออเดอร์เรียลไทม์ พร้อมระบบจัดการหลังบ้านและวิเคราะห์ยอดขาย",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
