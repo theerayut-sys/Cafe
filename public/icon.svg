@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1a0e" />
+      <stop offset="50%" stop-color="#3b2416" />
+      <stop offset="100%" stop-color="#190e07" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Inner subtle gold border -->
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="url(#gold)" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Cup & Artisanal Icon Graphic -->
+  <g filter="url(#shadow)">
+    <!-- Saucer / Plate -->
+    <ellipse cx="256" cy="380" rx="140" ry="24" fill="#b45309" opacity="0.3" />
+    <path d="M140 376 C 140 396, 372 396, 372 376 Z" fill="url(#gold)" />
+
+    <!-- Coffee Cup Body -->
+    <path d="M156 220 L 176 348 C 180 372, 332 372, 336 348 L 356 220 Z" fill="#faf7f2" />
+    <!-- Cup inner drink layer -->
+    <ellipse cx="256" cy="220" rx="100" ry="24" fill="#6d3f1d" />
+    <ellipse cx="256" cy="220" rx="88" ry="18" fill="url(#gold)" opacity="0.75" />
+
+    <!-- Handle -->
+    <path d="M346 244 C 388 244, 388 320, 340 326" fill="none" stroke="#faf7f2" stroke-width="24" stroke-linecap="round" />
+
+    <!-- Steam Waves -->
+    <path d="M216 170 C 210 145, 230 135, 220 110" fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" opacity="0.85" />
+    <path d="M256 180 C 250 150, 274 138, 260 102" fill="none" stroke="#fcd34d" stroke-width="14" stroke-linecap="round" opacity="0.95" />
+    <path d="M296 170 C 290 145, 310 135, 300 110" fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" opacity="0.85" />
+  </g>
+
+  <!-- Typography CC Badge -->
+  <rect x="206" y="260" width="100" height="46" rx="12" fill="#3b2416" />
+  <text x="256" y="293" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="28" fill="#fef3c7" text-anchor="middle" letter-spacing="2">CC</text>
+</svg>

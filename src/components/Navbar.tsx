@@ -1,17 +1,19 @@
 import React from 'react';
-import { ShoppingBag, Award, Store, Coffee, Bell } from 'lucide-react';
+import { ShoppingBag, Award, Store, Coffee, Bell, Download } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 
 interface NavbarProps {
   onOpenOrderHistory: () => void;
   onOpenReviews: () => void;
   onScrollToCategory: (categoryId: string) => void;
+  onOpenDownloadApp: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   onOpenOrderHistory,
   onOpenReviews,
   onScrollToCategory,
+  onOpenDownloadApp,
 }) => {
   const {
     cartCount,
@@ -101,6 +103,17 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="hidden sm:inline">กำลังทำ</span>
             </button>
           )}
+
+          {/* Download App Button */}
+          <button
+            onClick={onOpenDownloadApp}
+            className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#b45309] to-[#92400e] hover:from-[#92400e] hover:to-[#78350f] rounded-lg transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
+            title="ดาวน์โหลดและติดตั้งแอป Caffeine Cafe"
+          >
+            <Download className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">ดาวน์โหลดแอป</span>
+            <span className="sm:hidden">โหลดแอป</span>
+          </button>
 
           {/* Member points card button */}
           <button
